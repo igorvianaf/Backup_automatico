@@ -14,5 +14,6 @@ for arquivo in arquivos_origem:
     caminho_origem = os.path.join(origem, arquivo)
     caminho_destino = os.path.join(destino, arquivo)
     shutil.copy2(caminho_origem, caminho_destino)
+    # Usamos o copytree quando queremos copiar um diretorio inteiro
 
 print(f'Arquivo salvo em {destino}')
